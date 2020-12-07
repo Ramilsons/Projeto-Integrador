@@ -79,8 +79,8 @@ ul{
     cursor: pointer;
 }
 .img4-footer{
-    width: 150px;
-    height: 120px;
+    width: 120px;
+    height: 150px;
 }
 
 /*index*/
@@ -96,6 +96,7 @@ ul{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 70px;
 }
 .index-article h1{
@@ -302,6 +303,7 @@ main .painel-curiosidades article{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 60px;
 }
 .aside-contato{
     padding-top: 100px;
@@ -367,9 +369,61 @@ form button{
     font-weight: bold;
     font-size: 0.7em;
 }
-
-
-
+.time{
+    clear: both;
+    width: 100%;
+    background-color: #ececea;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.time header{
+    width: 100%;
+}
+.time header h2{
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: lighter;
+    margin-bottom: 90px;
+}
+.membro{
+    background-image: linear-gradient(to top, #ff6666 10%, #fff 0%, #fFf 70%, #fde45600 30%);
+    width: 22%;
+    padding-bottom: 70px;
+    border-radius: 0px 0px 8px 8px;
+}
+.membro img{
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.membro h3, .membro h4, .membro h5{
+    color: rgb(109, 109, 109);
+    text-align: center;
+    font-size: 1.6em;
+}
+.membro h5{
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+.membro h3, .membro h4{ 
+    color: #7f8996;
+    font-weight: lighter;
+}
+.membro.primeiro{
+    margin-left: 10%;
+}
+.membro.ultimo{
+    margin-right: 10%;
+}
 /* Biografia */
 .biografia h1{
     text-align: center;
@@ -501,4 +555,31 @@ form button{
 .acad section{
     width: 40%;
     margin: 20px auto 0px auto;
+}
+
+
+/* Referencias dos textos */
+.referencias, .biografia .referencias{
+    width: 100%;
+    margin: 0 auto;
+    background-color: initial;
+    display: initial;
+    color: #6e6b6b;
+}
+.referencias p, .segunda-parte .referencias p{
+    text-align: initial;
+    font-family: 'roboto', 'sans-serif';
+    font-weight: 300;
+    font-size: 0.9em;
+    text-indent: initial;
+    margin-top: 10px;
+}
+.biografia .referencias p, .segunda-parte .referencias p{
+    width: 100%;
+}
+
+.costas-tabela .referencias p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
